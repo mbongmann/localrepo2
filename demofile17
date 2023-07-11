@@ -2,3 +2,16 @@ Okay so today i did my homework
 Soon we will be applying for jobs
 I have to travel to Cin city on the 19
 I am so exhausted from everything
+Below is a code to configure vpc on terraform
+
+resource "aws_default_vpc" "default" {
+  tags = {
+    Name = "Default VPC"
+  }
+}
+
+And also a code to configure EC2
+
+provider "aws" {
+  region = "us-west-2"
+}
